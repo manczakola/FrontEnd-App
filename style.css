@@ -14,6 +14,7 @@ body {
 
 .nameTile {
     border: 3px rgba(97, 93, 93, 0.226) solid;
+    box-shadow: 0px 0px 5px .5px rgba(128, 128, 128, 0.342);
     border-radius: 10px;
     font-size: 3vw;
     margin: 0em;
@@ -87,7 +88,10 @@ input[type=checkbox]:checked:after {
     border: 1px solid;
     border-radius: 10%;
     padding: 0 .3em;
+}
 
-
-
+.done {
+    border: 5px rgba(4, 160, 11, 0.897) solid;
+    transition: all 1s ease-in-out;
+    transform: scale(1.2);
 }
