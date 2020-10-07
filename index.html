@@ -10,7 +10,7 @@
 
 <body>
 
-    <div>
+    <div id='container'>
 
         <h1>Front-end</h1>
 
@@ -18,12 +18,12 @@
             <div class="nameTile">Internet</div>
             <div class="hideTile">
                 <ul>
-                    <li>How does the internet work?</li>
-                    <li>What is HTTP?</li>
-                    <li>Browsers and how they work?</li>
-                    <li>DNS and how it works?</li>
-                    <li>What is Domain Name?</li>
-                    <li>What is hosting?</li>
+                    <li><input type='checkbox'>How does the Internet work?</li>
+                    <li><input type='checkbox'>What is HTTP?</li>
+                    <li><input type='checkbox'>Browsers and how they work?</li>
+                    <li><input type='checkbox'>DNS and how it works?</li>
+                    <li><input type='checkbox'>What is Domain Name?</li>
+                    <li><input type='checkbox'>What is hosting?</li>
                 </ul>
             </div>
         </div>
@@ -53,120 +53,279 @@
             </div>
         </div>
 
-        <!-- <div class="tile">
-                <ul>JavaScript</ul>
-                <li>Syntax and Basics Construct</li>
-                <li>Learn DOM Manipulation</li>
-                <li>Learn Fetch API/Ajax</li>
-                <li>ES6+ and modular JavaScript</li>
-                <li>Understand the concepts Hoisting, Event Bubbling, Scope, Prototype, Shadow DOM, stric</li>
+        <div class="tile">
+            <div class="nameTile">JavaScript</div>
+            <div class="hideTile">
+                <ul>
+                    <li>Syntax and Basics Construct</li>
+                    <li>Learn DOM Manipulation</li>
+                    <li>Learn Fetch API/Ajax</li>
+                    <li>ES6+ and modular JavaScript</li>
+                    <li>Understand the concepts Hoisting, Event Bubbling, Scope, Prototype, Shadow DOM, strict</li>
+                </ul>
+            </div>
         </div>
 
         <div class="tile">
-            <ul>Version Control System</ul>
-                <li>Repo hosting services</li>
-                    <ul>GitHub</ul>
+            <div class="nameTile">Version Control System</div>
+            <div class="hideTile">
+                <ul>
+                    <li>WBasic Usage of Git</li>
+                </ul>
+            </div>
         </div>
-        
-        <div class="tile">
-            <ul>Web security</ul>
-        </div>   
-        
-        <div class="tile">
-            <ul>Package Managers</ul>
-                <li>npm</li>
-                <li>yarn</li>
-         </div>
 
-         <div class="tile">
-            <ul>CSS Architecture</ul>
-                <li>BEM</li>
-            <ul>CSS Preprocessors</ul>
-                <li>Sass</li>
-            <ul>Build Tools</ul>
-                <li>Task Runners</li>
-                    <ul>npm scripts</ul>
-                <li>Linters and Formatters</li>
-                    <ul>Prettier</ul>
-                    <ul>ESLint</ul>
-                <li>Module Bundlers</li>
-                    <ul>WebPack</ul>
-                    <ul>Rollup</ul>
-                    <ul>Parcel</ul>
-            <ul>Pick a Framework</ul>
-                <li>React.js</li>
-                    <ul>Redux</ul>
-                    <ul>MobX</ul>
-                <li>Angular</li>
-                    <ul>RxJS</ul>
-                    <ul>NgRx</ul>
-                <li>Vue.js</li>
-                    <ul>VueX</ul>
-            <ul>Modern CSS</ul>
-                <li>Styled Components</li>
-                <li>CSS Modules</li>
-                <li>Styled JSX</li>
-                <li>Emotion</li>
-            <ul>Web Components</ul>
-                <li>HTML Templates</li>
-                <li>Custom Elements</li>
-                <li>Shadow DOM</li>
-            <ul>CSS Frameworks</ul>
-                <li>Reactstrap</li>
-                <li>Material UI</li>
-                <li>Tailwind CSS</li>
-                <li>Chakra UI</li>
-                <li>Bootstrap</li>
-            <ul>Testing your Apps</ul>
-                <li>Jest</li>
-                <li>React-testing-library</li>
-                <li>Cypress</li>
-                <li>Enzyme</li>
-            <ul>Type Checkers</ul>
-                <li>TypeScript</li>
-            <ul>Progressive Web Apps</ul>
-                <li>Storage</li>
-                <li>Web Sockets</li>
-                <li>Service Workers</li>
-                <li>Location</li>
-                <li>Notigications</li>
-                <li>Device Orientation</li>
-                <li>Payments</li>
-                <li>Credentials</li>
-                <li>PRPL Pattern</li>
-                <li>Rail Model</li>
-                <li>Performance Metrics</li>
-                <li>Using Lighthouse</li>
-                <li>Using DevTools</li>
-            <ul>Server Side Rendering (SSR)</ul>
-                <li>React.js</li>
-                    <ul>Next.js</ul>
-                <li>Angular</li>
-                    <ul>Universal</ul>
-                <li>Vue.js</li>
-                    <ul>Nuxt.js</ul>
-            <ul>GraphQL</ul>
+        <div class="tile">
+            <div class="nameTile">Repo hosting services</div>
+            <div class="hideTile">
+                <ul>
+                    <li>Github</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">Web security</div>
+            <div class="hideTile">
+                <ul>
+                    <li>HTTPS</li>
+                    <li>CORS</li>
+                    <li>Content Security Policy</li>
+                    <li>OWASP Security Risks</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">Package Managers</div>
+            <div class="hideTile">
+                <ul>
+                    <li>npm</li>
+                    <li>yarn</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">CSS Architecture</div>
+            <div class="hideTile">
+                <ul>
+                    <li>BEM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">CSS Preprocessors</div>
+            <div class="hideTile">
+                <ul>
+                    <li>Sass</li>
+                    <li>Post CSS</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">Build Tools</div>
+            <div class="hideTile">
+                <div class="nameTile">Task Runners</div>
+                <ul>
+                    <li>npm scripts</li>
+                </ul>
+                <div class="nameTile">Module Bundlers</div>
+                <ul>
+                    <li>WebPack</li>
+                    <li>Rollup</li>
+                    <li>Parcel</li>
+                </ul>
+                <div class="nameTile">Linters and Formatters</div>
+                <ul>
+                    <li>Prettier</li>
+                    <li>ESLint</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">Pick a Framework</div>
+            <div class="hideTile">
+                <div class="nameTile">React.js</div>
+                <ul>
+                    <li>Redux</li>
+                    <li>MobX</li>
+                </ul>
+                <div class="nameTile">Angular</div>
+                <ul>
+                    <li>RxJS</li>
+                    <li>NgRx</li>
+                </ul>
+                <div class="nameTile">Vue.js</div>
+                <ul>
+                    <li>VueX</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">Modern CSS</div>
+            <div class="hideTile">
+                <ul>
+                    <li>Styled Components</li>
+                    <li>CSS Modules</li>
+                    <li>Styled JSX</li>
+                    <li>Emotion</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">Web Components</div>
+            <div class="hideTile">
+                <ul>
+                    <li>HTML Templates</li>
+                    <li>Custom Elements</li>
+                    <li>Shadow DOM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">CSS Framework</div>
+            <div class="hideTile">
+                <ul>
+                    <li>Reactstrap</li>
+                    <li>Material UI</li>
+                    <li>Tailwind CSS</li>
+                    <li>Chakra UI</li>
+                    <li>Bootstrap</li>
+                    <li>Materialize CSS</li>
+                    <li>Bulma</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="tile">
+            <div class="nameTile">Testing your Apps</div>
+            <div class="hideTile">
+                <ul>
+                    <li>Jest</li>
+                    <li>React-testing-library</li>
+                    <li>Cypress</li>
+                    <li>Enzyme</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">Type Checkers</div>
+            <div class="hideTile">
+                <ul>
+                    <li>TypeScript</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="tile">
+            <div class="nameTile">Progressive Web Apps</div>
+            <div class="hideTile">
+                <ul>
+                    <li>Storage</li>
+                    <li>Web Sockets</li>
+                    <li>Service Workers</li>
+                    <li>Location</li>
+                    <li>Notigications</li>
+                    <li>Device Orientation</li>
+                    <li>Payments</li>
+                    <li>Credentials</li>
+                    <li>PRPL Pattern</li>
+                    <li>Rail Model</li>
+                    <li>Performance Metrics</li>
+                    <li>Using Lighthouse</li>
+                    <li>Using DevTools</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="tile">
+            <div class="nameTile">Server Side Rendering (SSR)</div>
+            <div class="hideTile">
+                <div class="nameTile">React.js</div>
+                <ul>
+                    <li>Next.js</li>
+                </ul>
+                <div class="nameTile">Angular</div>
+                <ul>
+                    <li>Universal</li>
+                </ul>
+                <div class="nameTile">Vue.js</div>
+                <ul>
+                    <li>Nuxt.js</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">GraphQL</div>
+            <div class="hideTile">
+                <ul>
                     <li>Apollo</li>
                     <li>Relay Modern</li>
-            <ul> Static Site Generators</ul>
-                <li>Next.js</li>
-                <li>GatsbyJS</li>
-                <li>Nuxt.js</li>
-                <li>Vuepress</li>
-                <li>Jekyll</li>
-                <li>Hugo</li>
-            <ul>Mobile Applications</ul>
-                <li>React Native</li>
-                <li>NativeScript</li>
-                <li>Flutter</li>
-                <li>Ionic</li>
-            <ul>Desktop Applications</ul>
-                <li>Electron</li>
-            <ul>Web Assembly</ul>
-            <ul>Keep Learning</ul>
-    </div> -->
+                </ul>
+            </div>
+        </div>
 
-        <script src='script.js'></script>
+        <div class="tile">
+            <div class="nameTile">Static Site Generators</div>
+            <div class="hideTile">
+                <ul>
+                    <li>Next.js</li>
+                    <li>GatsbyJS</li>
+                    <li>Nuxt.js</li>
+                    <li>Vuepress</li>
+                    <li>Jekyll</li>
+                    <li>Hugo</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="tile">
+            <div class="nameTile">Mobile Applications</div>
+            <div class="hideTile">
+                <ul>
+                    <li>React Native</li>
+                    <li>NativeScript</li>
+                    <li>Flutter</li>
+                    <li>Ionic</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">Desktop Applications</div>
+            <div class="hideTile">
+                <ul>
+                    <li>Electron</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="tile">
+            <div class="nameTile">Web Assembly</div>
+        </div>
+
+        <div class="tile">
+            <div class="nameTile">Keep Learning</div>
+        </div>
+
+
+    </div>
+
+    <script src='script.js'></script>
 </body>
 
 </html>
