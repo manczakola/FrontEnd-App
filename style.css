@@ -94,4 +94,5 @@ input[type=checkbox]:checked:after {
     border: 5px rgba(4, 160, 11, 0.897) solid;
     transition: all 1s ease-in-out;
     transform: scale(1.2);
+
 }

@@ -20,26 +20,27 @@ function doneTile(e) {
     const thisNameTile = thisTile.children[0];
     const index = e.target.dataset.index;
     const thisCheckboxes = [...tiles[index - 1].querySelectorAll('input[type=checkbox]')];
+    const checkedCheckboxes = [...tiles[index - 1].querySelectorAll('input[type=checkbox]:checked')].length;
+
     // console.log(thisTile, thisNameTile, index, thisCheckboxes, thisCheckboxes.length, thisCheckboxes.checked);
+    // console.log(thisCheckboxes, checkedCheckboxes);
 
 
 
-    if (e.target.checked) {
-        i++
-    } else {
-        i--
-    }
-    console.log(i);
-
-    if (i === thisCheckboxes.length) {
+    if (checkedCheckboxes == thisCheckboxes.length) {
         thisNameTile.classList.add('done');
-        i = 0;
-
-    } else if (i < thisCheckboxes.length) {
+    } else {
         thisNameTile.classList.remove('done');
+    };
+
+    const percentOfTile = Math.floor((checkedCheckboxes / thisCheckboxes.length) * 100);
+    if (checkedCheckboxes > 0) {
+
+        nameTile.textContent = +`${percentOfTile}%`;
     }
 
 }
+
 
 
 
@@ -49,4 +50,4 @@ nameTile.forEach(tile => {
 });
 checkboxes.forEach(check => {
     check.addEventListener('change', doneTile)
-})
+});
