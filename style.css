@@ -1,15 +1,21 @@
 body {
     font-size: 2vw;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+h1 {
+    text-align: center;
+    padding: 2em;
+    color: rgba(117, 108, 108, 0.699);
 }
 
 .tile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3em;
-
-
+    justify-content: center;
+    margin-bottom: 1em;
 }
 
 .nameTile {
@@ -28,59 +34,53 @@ body {
 }
 
 .hideTile {
-    max-width: 40vw;
     margin-top: 1em;
     justify-content: flex-start;
-    cursor: pointer;
-    transition: all 1s ease-in-out;
-    opacity: 0;
     height: 0;
     overflow: hidden;
-    transform: scale(0.7);
-
-
+    transform: translateX(-100vw);
+    transition: transform 1s ease-in-out;
 }
 
-.hideTile.display {
+
+.display {
     opacity: 1;
     height: auto;
-    transform: scale(1);
+    transform: translateX(0);
 }
+
 
 ul {
     list-style-type: none;
-    padding-inline-start: 0;
+    padding-inline-start: 1em;
     display: flex;
     flex-direction: column;
 }
 
 li {
     border-bottom: 2px rgba(97, 93, 93, 0.349) solid;
-    padding: .5em 1em;
-    margin: 1em;
-    font-size: .8em;
+    padding: 1.5em 3em;
+    font-size: 1em;
+    width: 40vw;
+
 }
 
 input[type="checkbox"] {
     width: 1.5em;
     height: 1.5em;
-    border: 1px solid grey;
-    margin: 0.3em 1em;
+    margin: 2em;
 
+    border: 1px solid grey;
+    cursor: pointer;
 }
 
 input[type="checkbox"]:checked {
     color: rgb(26, 180, 26);
-
-
-
 }
 
 input[type=checkbox]:after {
     background-color: white;
     display: block;
-
-
 }
 
 input[type=checkbox]:checked:after {
@@ -91,8 +91,17 @@ input[type=checkbox]:checked:after {
 }
 
 .done {
+
     border: 5px rgba(4, 160, 11, 0.897) solid;
     transition: all 1s ease-in-out;
     transform: scale(1.2);
 
+}
+
+.percent {
+    font-size: 1.5em;
+    height: 1.5em;
+    margin-bottom: 1em;
+    font-weight: 700;
+    color: black;
 }
