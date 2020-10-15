@@ -1,6 +1,7 @@
 const tiles = document.querySelectorAll('.tile');
 const nameTile = document.querySelectorAll('.nameTile');
 const hideTile = document.querySelectorAll('.hideTile');
+const dots = document.querySelectorAll('.dots');
 const checkboxes = [...document.querySelectorAll('input[type=checkbox]')];
 const internetChceckboxes = tiles[0].querySelectorAll('input[type=checkbox]');
 const percent = document.querySelector("div.percent");
@@ -8,11 +9,14 @@ const percent = document.querySelector("div.percent");
 // Functions
 
 function showList(e) {
+    const thisList = this.parentNode.children[1];
+
+    const thisDots = e.target.parentNode.children[2];
+
     // Display list item when click name of tile
 
-    const thisList = this.parentNode.children[1];
-    thisList.classList.toggle('display')
-
+    thisList.classList.toggle('display');
+    thisDots.classList.toggle('displayDot');
 
 }
 
@@ -43,7 +47,7 @@ function doneTile(e) {
     });
 
 
-
+    console.log(percentOfTile, checkedCheckboxes, thisCheckboxes);
 }
 
 
