@@ -26,16 +26,16 @@ h1 {
 .nameTile {
     border: 3px rgba(97, 93, 93, 0.678) solid;
     border-radius: 10px;
-    font-size: 40px;
+    font-size: 60px;
     margin: 0em;
     padding: .2em 2em;
     cursor: pointer;
     transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-#container>div>div:nth-child(29)>div {
+#container>div:nth-child(26) {
     margin-top: 1.5em;
-    margin-bottom: 4em;
+    margin-bottom: 7em;
 }
 
 .nameTile:hover {
