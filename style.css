@@ -26,12 +26,13 @@ h1 {
 .nameTile {
     border: 3px rgba(97, 93, 93, 0.678) solid;
     border-radius: 10px;
-    font-size: 28px;
+    font-size: 1em;
     margin: 0em;
     padding: .2em 2em;
     cursor: pointer;
     transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 
 #container>div:nth-child(26) {
     margin-top: 1.5em;
@@ -69,7 +70,7 @@ ul {
 li {
     border-bottom: 2px rgba(97, 93, 93, 0.349) solid;
     padding: .5em;
-    font-size: 24px;
+    font-size: .7em;
     max-width: 70vw;
 }
 
