@@ -15,7 +15,6 @@ h1 {
     justify-content: center;
     padding: 1em 0 2em;
     color: rgb(58, 53, 53);
-    font-size: 50px;
 }
 
 
@@ -71,7 +70,6 @@ h1 {
 .nameTile {
     border: 3px rgba(97, 93, 93, 0.678) solid;
     border-radius: 10px;
-    font-size: 40px;
     margin: 0em;
     padding: 0.2em 2em;
     cursor: pointer;
@@ -112,7 +110,6 @@ ul {
 li {
     border-bottom: 2px rgba(97, 93, 93, 0.349) solid;
     padding: 0.5em;
-    font-size: 30px;
     max-width: 70vw;
 }
 
