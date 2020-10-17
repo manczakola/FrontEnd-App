@@ -18,17 +18,46 @@ h1 {
     font-size: 50px;
 }
 
-@media (max-width: 1000px) {
+
+@media screen and (min-width: 769px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .nameTile {
+        font-size: 40px;
+    }
+
+    li {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
     h1 {
         font-size: 40px;
     }
 
     .nameTile {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     li {
-        font-size: 40px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .nameTile {
+        font-size: 20px;
+    }
+
+    li {
+        font-size: 20px;
     }
 }
 
