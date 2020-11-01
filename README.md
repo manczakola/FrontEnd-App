@@ -4,3 +4,8 @@
  ### This tool will help you choose the best way to learn the front-end 😁
  ## Check this: https://manczakola.github.io/FrontEnd-App/index.html
 ## Based on this roadmap: https://roadmap.sh/frontend
+
+### What can I do to make this better?
+<ul>
+ <li>Save checkboxes in local storage </li>
+ </ul>
